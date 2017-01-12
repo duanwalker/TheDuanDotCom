@@ -1,0 +1,508 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Created by: Duan Walker 2015-->
+    <title>Duan.com</title>
+    <meta name="keywords" content="HTML5, CSS3, Javascript, jQuery, responsive, Portfolio, web developer, .net, design, logo, branding, bootstrap, illustrator, photoshop, charlotte, north carolina, Duan Walker">
+    <meta name="description" content="The Duan.com Home of The Computer Tutor " />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/duanfavicon.jpg">
+
+    <!-- Google Web Font Embed -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+
+    <!-- Bootstrap core CSS -->
+   <!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" />-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+     <!--<link href="css/bootstrap.css" rel='stylesheet' type='text/css'>-->
+    <!--load hamburger menu styles -->
+    <!--<link href="css/hamburgers.css" rel="stylesheet">
+    <link href="css/hamburgers.min.css" rel=" stylesheet" />-->
+
+    <!-- Custom styles -->
+    <!--<link href="js/colorbox/colorbox.css" rel='stylesheet' type='text/css'>-->
+    <link href="css/templatemo_style2.css" rel='stylesheet' type='text/css'>
+    <!--<link href="css/AccordionStyle.css" rel="stylesheet" type='text/css' />-->
+
+    <!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+   
+     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+     <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+    <!-- Load JavaScript Libraries-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/templatemo_script.js" type="text/javascript"></script>
+    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    
+    <!-- Inline Script-->
+    <script>
+        function showImages(el) {
+            var windowHeight = jQuery(window).height();
+            $(el).each(function () {
+                var thisPos = $(this).offset().top;
+
+                var topOfWindow = $(window).scrollTop();
+                if (topOfWindow + windowHeight - 200 > thisPos) {
+                    $(this).addClass("fadeIn");
+                }
+            });
+        }
+        // if the image in the window of browser when scrolling the page, show that image
+        $(window).scroll(function () {
+            showImages('.star');
+        });
+        //$(window).scroll(function () {
+        //    $('.nav').animate({
+        //        left: "800px"
+        //    }, 850);
+           
+        //});
+        $(window).scroll(function () {
+            $('.quote').animate({
+                left: "300px"
+            }, 850);
+        });
+        //bootstrap menu active on click
+        $(".nav a").on("click", function () {
+            $(".nav").find(".active").removeClass("active");
+            $(this).parent().addClass("active");
+        });
+    </script>
+
+</head>
+<body>
+    <main>
+        <nav class="navbar navbar-default navbar-fixed-top duan-top">
+            <!-- Static navbar -->
+            <div class=" #" role="navigation">
+                <section class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#duan-nav-bar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <!--<button class="hamburger hamburger--collapse navbar-toggle" data-toggle="collapse" data-target="#duan-nav-bar" type="button">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                        <span class="hamburger-label">Menu</span>
+                    </button>-->
+                        <a href="#" class="navbar-brand" id="menu">
+                            <img src="images/applebook_logo.jpg" alt="The Duan" title="The Computer Tutor" />
+                        </a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="duan-nav-bar">
+                        <ul class="nav navbar-nav pull-right">
+                            <li class="active"><a href="#duan-carousel">HOME</a></li>
+                            <li><a href="#duan-service">SKILLS</a></li>
+                            <li><a href="#duan-about">ABOUT</a></li>
+                            <li><a href="#duan-portfolio">PORTFOLIO</a></li>
+
+                        </ul>
+                    </div>
+                    <!--/.nav-collapse -->
+                </section>
+                <!--/.container-fluid -->
+            </div>
+            <!--/.navbar -->
+        </nav>
+
+        <div class="duan-welcome " id="duan-welcome-home">
+            <div class="container container-top">
+                <div class="row">
+                    <div class="duan-slogan text-center">
+                        <span class="txt_darkgrey">Welcome to </span><span class="txt_CTblue">Duan.com!</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="text-center">
+                        <p class="txt_slogan"><i>Home of "The Computer Tutor"!</i></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="header_container">
+                        <ul class="list-inline">
+                            <li>
+                                <a href="https://github.com/duanwalker">
+                                    <span class="social-icon-github"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://codepen.io/thecomputertutor/">
+                                    <span class="social-icon-codepen"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/duanwalkerthecpututor">
+                                    <span class="social-icon-linkedin"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <!-- Carousel -->
+            <div id="duan-carousel" class="carousel carousel-overlay slide star fadeIn" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#duan-carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#duan-carousel" data-slide-to="1"></li>
+                    <li data-target="#duan-carousel" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <div class="carousel-caption">
+                            <h1>Hi! I'm Duan</h1>
+                            <p>But you can call me <b>"The Computer Tutor"</b>. I am a web developer, graphic designer, full time Panthers fan and all around awesome guy in Charlotte, NC. Feel free to have a look around. (mouse over to pause)</p>
+                            <button class="btn btn-lg "><a class="txt-primary" href="#duan-about">Read More</a></button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="carousel-caption">
+                            <h1>RESPONSIVE LAYOUT</h1>
+                            <p>I used a combination of the Bootstrap framework, HTML5, CSS3, and Javascript to build this responsive mobile-friendly website. Check it out on your phone or tablet!</p>
+                            <button class="btn btn-lg "><a class="txt-primary" href="#duan-service">Read More</a></button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="row">
+                            <div class="carousel-caption">
+                                <div class="col-sm-6 ">
+                                    <h1>Web Applications</h1>
+                                    <p>As an experienced front end developer, I take pride in building web applications with aesthetic appeal that drives user confidence.</p>
+                                    <button class="btn btn-lg "><a class="txt-primary" href="#duan-portfolio">Read More</a></button>
+                                </div>
+                                <div class="col-sm-6 ">
+                                    <h1>Corporate Branding</h1>
+                                    <p>I also create beautiful custom logos. Allow your company to stand out from the competition with a vibrant design that attracts users attention.</p>
+                                    <button class="btn btn-lg "><a class="txt-primary" href="#duan-portfolio">Read More</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="left carousel-control" href="#duan-carousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+                <a class="right carousel-control" href="#duan-carousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+            <!-- /#duan-carousel -->
+        </div>
+
+        <div class="duan-line-header" id="duan-service">
+            <div class="container">
+                <section class="row title-row">
+                    <div class="col-sm-4  hr_gray" ></div>
+                        <div class="col-sm-4 text-center">MY SKILLS</div>
+                    <div class="col-sm-4 hr_gray" ></div>
+                </section>
+
+  <div class="clearfix"></div>
+                <div class="duan-service">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="skills-logo">
+                                    <img class="image" src="images/html5.png" />
+                                    <strong class=" text-center">HTML5</strong>
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="skills-logo">
+                                    <img class="image" src="images/css3.png" />
+                                    <strong>CSS3</strong>
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="skills-logo">
+                                    <img class="image" src="images/js.png" />
+                                    <strong>JavaScript</strong>
+                                </div>
+
+                            </div>
+                            <div class="col-md-3">
+                                <div class="skills-logo">
+                                    <img class="image" src="images/jquery.png" />
+                                    <strong>JQuery</strong>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class=" row">
+                            <div class="col-md-12 skills-description">
+                                <p>I currently teach a coding bootcamp at UNC Charlotte where students learn full stack web development (MEAN). As a Certified Front End Web Developer, I have 6 years experience in web development and web design, with a front end focus. I have contributed to projects in the full SDLC from requirements gathering to deployment. I design mobile friendly sites using tools such as <b>HTML5</b>, <b>CSS3</b>, <b>JQuery</b> and <b>Bootstrap</b> for a fully responsive layout. Check it out on your phone or tablet!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="duan-team " id="duan-about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4  hr_gray"></div>
+                    <div class="col-sm-4 text-center">ABOUT ME</div>
+                    <div class="col-sm-4 hr_gray"></div>
+                </div>
+                <div class="row row_team">
+                    <div class="text-center">
+                        <section class="col-md-3  ">
+
+                            <div class="member-thumb">
+                                <img src="images/capspread.gif" class="img img-responsive star" alt="member 1" />
+                                <div class="thumb-overlay">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <a href="http://thecomputertutor.tumblr.com/"><span class="social-icon-tumblr"></span></a>
+                                        </div>    
+                                        <div class="col-md-4">
+                                            <a href="https://twitter.com/TheCPUTutor"><span class="social-icon-twitter"></span></a>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <a href="https://plus.google.com/u/0/+DuanWalkerTheCPUTutor"><span class="social-icon-google"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <p class="team-inner-header ">DUAN</p>
+                                <p class="team-inner">(touch or mouse over pic for social media)</p>
+                            </div>
+
+                        </section>
+                        <section class="col-md-9">
+
+                            <div class="bio">
+                                <div class="#">
+                                    <span class="team-inner-header">Bio:</span>
+                                </div>
+                                <br />
+                                <p class="team-inner-subtext">
+                                    I've always had a passion for technology and gadgets since a very young age. When we were young, my brother and I received lots of electronic toys for christmas. From radio controlled cars to controllable robots, year after year my brother and I
+                                    would eventually break the toys our parents got us. Now, I'm sure our parents didn't know this at the time, but we weren't necessarily being "boys with toys", breaking our toys just for the hell of it...I desperately wanted to know how the thing worked. After figuring out
+                                    that it was actually little motors and gears that made the toys move, I eventually built my own little 3-wheeled go cart toy out of spare parts we had from breaking apart our other toys. Following in my footsteps my little brother built one of his own
+                                    and we spent a few long, hot and boring summers racing our go carts against each other. That go cart was my favorite toy that I played with more than even my store-bought toys, constantly upgrading and improving it along the way. I think I loved that go cart so much
+                                    because it was something I had made with my own hands and imagination, and nobody told me to do it. It was then that I knew I wanted to build things for a living, as I was engineering before I even knew
+                                    what the word meant. From there, I learned programming and the rest is as they say history...
+                                </p>
+                                <br />
+                                <div class="text-center">
+                                    <button class="btn btn-lg "><a class="txt-primary" href="https://drive.google.com/file/d/0B66xaYRsJwbGemdlaGpBVzdGX1E/view?usp=sharing" role="button">View My Resume</a></button>
+                                </div>
+                                <br class="clearfix" />
+                            </div>
+
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.duan-team -->
+
+        <div class="portfolio" id="duan-portfolio">
+            <div class="container">
+                <div class="row">
+                    <div class="row">
+                        <div class="col-sm-4  hr_gray"></div>
+                        <div class="col-sm-4 text-center">MY PORTFOLIO</div>
+                        <div class="col-sm-4 hr_gray"></div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="duan-gallery-category" style="font-size: 16px; margin-top: 80px;">
+                        <div class="text-center">
+                            <!--<a class="active" href=".gallery">All</a> / <a href=".gallery-design">Web Design </a>/ <a href=".gallery-graphic">Graphic</a> / <a href=".gallery-inspiration">Code Pens</a> / <a href=".gallery-creative">Creative</a>-->
+                            <p>Mouse hover over item to expand, click on the title to view the project</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.row -->
+                <!--Accordion Style slider-->
+                <!--  a simple accordian with hover effects idea from http://thecodeplayer.com/walkthrough/make-an-accordian-style-slider-in-css3?s=rlt -->
+              <!--  <div id="portfolio" class="#">
+                    <ul>
+                        <li>
+                            <div class="image_title">
+                                <a href="http://www.givengo.org">Give n Go</a>
+                                <p>I built this in WordPress for a nonprofit</p>
+                            </div>
+                            <a href="http://www.givengo.org">
+                                <img src="images/gngCapture2.jpg" />
+                            </a>
+                        </li>
+                        <li>
+                            <div class="image_title">
+                                <a href="http://readium.github.io/test-results/cloudreader/index.html">Readium Test Results</a>
+                                <p>This is a data driven web application that was built to automate a business process for the Readium organization. I used HTML5,CSS3, and a Javascript library to parse spreadsheet data</p>
+                            </div>
+                            <a href="http://readium.github.io/test-results/cloudreader/index.html">
+                                <img src="images/readiumTestResults.JPG" />
+                            </a>
+                        </li>
+                        <li>
+                            <div class="image_title">
+                                <a href="http://www.mycpututor.com">The Computer Tutor</a>
+                                <p>I also host online video tutorials in computing. I built this using visual basic and ASP.Net. </p>
+                            </div>
+                            <a href="http://www.mycpututor.com">
+                                <img src="images/CT_site_slide1_small.jpg" />
+                            </a>
+                        </li>
+                        <li>
+                            <div class="image_title">
+                                <a href="http://www.brockandscott.com">Brock & Scott PLLC.</a>
+                                <p>I built this for a law firm in 2013 using HTML,CSS, Javascript and C#.Net</p>
+                            </div>
+                            <a href="http://www.brockandscott.com">
+                                <img src="images/BnS1.JPG" />
+                            </a>
+                        </li>
+                        <li>
+                            <div class="image_title">
+                                <a href='http://codepen.io/thecomputertutor/pen/LpMWGr/'>Javascript Calculator</a>
+                                <p>I butil this calculator using HTML5, CSS3, JQuery and Bootstrap </p>
+                            </div>
+                            <a></a><iframe height='400' width="485" scrolling='no' src='//codepen.io/thecomputertutor/embed/preview/LpMWGr/?height=268&theme-id=0&default-tab=result' frameborder='no' allowtransparency='true' allowfullscreen='true'></iframe> </a>
+                        </li>
+                        <li>
+                            <div class="image_title">
+                                <a href='http://codepen.io/thecomputertutor/pen/pyLvWB'>Play SIMON!</a>
+                                <p>I built this Simon game simulator using HTML5, CSS3, JQuery and Bootstrap. Enjoy! </p>
+                            </div>
+                            <a></a><iframe height='400' width="485" scrolling='no' src='//codepen.io/thecomputertutor/embed/preview/pyLvWB/?height=268&theme-id=0&default-tab=result' frameborder='no' allowtransparency='true' allowfullscreen='true'></iframe> </a>
+                        </li>
+                        <li>
+                            <div class="image_title">
+                                <a href='http://codepen.io/thecomputertutor/pen/rOzKxB/'>My Tumblr Blogs</a>
+                                <p>I created this app to display my blogs from Tumblr using HTML5, CSS3, JQuery and Bootstrap </p>
+                            </div>
+                            <a></a><iframe height='400' width="485" scrolling='no' src='//codepen.io/thecomputertutor/embed/preview/rOzKxB/?height=268&theme-id=0&default-tab=result' frameborder='no' allowtransparency='true' allowfullscreen='true'></iframe> </a>
+                        </li>
+                    </ul>-->
+                    <!--Accordion Style slider-->   
+                    <div class="container">
+                        <div class="row">
+                            <div class=" col-md-4">                 
+                                <div class="grow pic">                                
+                                        <a href="http://www.givengo.org"> 
+                                            <img src="images/gngCapture2.jpg" alt="portrait">
+                                        </a>  
+                                        <div class="#">
+                                            <a href="http://www.givengo.org"><h1>Give n Go</h1></a>
+                                            <p>I built this in WordPress for a nonprofit</p>
+                                        </div>                           
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="grow pic ">
+                                    <a href="http://readium.github.io/test-results/cloudreader/index.html"><img src="images/readiumTestResults.JPG" alt="portrait" /></a>
+                                    <div class="#"><h1>Readium</h1><p>I built this using an open source JS library to automate a business process on my current role.</p></div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="grow pic">
+                                    <a href="http://www.mycpututor.com"><img src="images/CT_site_slide1_small.jpg" /></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class=" col-md-4">
+                                <div class="grow pic">
+                                    <a href="http://www.brockandscott.com"> <img src="images/BnS1.JPG" alt="portrait"></a>
+                                </div>
+                            </div>
+                            <div class=" col-md-4">
+                                <div class="grow pic">
+                                    <a href="http://codepen.io/thecomputertutor/pen/LpMWGr/"> <iframe height='400' width="485" scrolling='no' src='//codepen.io/thecomputertutor/embed/preview/LpMWGr/?height=268&theme-id=0&default-tab=result' frameborder='no' allowtransparency='true' allowfullscreen='true'></iframe></a>
+                                </div>
+                            </div>
+                            <div class=" col-md-4">
+                                <div class="grow pic">
+                                    <a href="http://codepen.io/thecomputertutor/pen/rOzKxB/"> <iframe height='400' width="485" scrolling='no' src='//codepen.io/thecomputertutor/embed/preview/rOzKxB/?height=268&theme-id=0&default-tab=result' frameborder='no' allowtransparency='true' allowfullscreen='true'></iframe></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>                                    
+                <!-- /.gallery -->
+                <div class="clearfix"></div>
+
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.duan-portfolio -->
+      
+        <!-- /#duan-contact -->
+
+        <div class="duan-tweets ">
+            <div class="container">
+                <div class="row" style="margin-top: 20px;">
+                    <div class="col-md-2">
+                    </div>
+                    <div class="col-md-1">
+                        <img src="images/quote.png" alt="icon" />
+                    </div>
+                    <div class="col-md-7 tweet_txt star ">
+                        <script type="text/javascript" src="http://www.brainyquote.com/link/quotebr.js"></script>
+                        <small><i><a href="http://www.brainyquote.com/quotes_of_the_day.html" target="_blank"></a></i></small>                        
+                    </div>
+                    <div class="col-md-2">
+                    </div>
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </div>
+        <div class="duan-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="text-center">
+
+                        <div class="footer_container">
+                            <ul class="list-inline">
+                                <li>
+                                    <a href="https://github.com/duanwalker">
+                                        <span class="social-icon-github"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://codepen.io/thecomputertutor/">
+                                        <span class="social-icon-codepen"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.linkedin.com/in/duanwalkerthecpututor">
+                                        <span class="social-icon-linkedin"></span>
+                                    </a>
+                                </li>
+                                <!--<li>
+                    <a href="#">
+                        <span class="social-icon-dribbble"></span>
+                    </a>
+                </li>-->
+                            </ul>
+                        </div>
+                            <div class="height30"></div>
+                            <button class="btn btn-lg "><a class="txt-primary btn-back-to-top" href="#duan-carousel" role="button">Back To Top</a></button>
+                          
+                        
+                        <footer class="footer_bottom_content">
+                            <span>Created by: <a href="https://www.linkedin.com/in/duanwalkerthecpututor">Duan Walker</a> Copyright © 2015 </span>
+                        </footer>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+</body>
+</html>
