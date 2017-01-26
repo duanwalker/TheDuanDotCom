@@ -374,13 +374,14 @@ position: fixed;
     background-color: rgba(220, 157, 102, 0.8);
     position: absolute;
     visibility: hidden;
-    padding-top: 35%;
-    padding-left: 25%;
-    height: 100%;
-    width: 100%;
+    /*padding-top: 35%;
+    padding-left: 25%;*/
+    height: 200px;
+    width:200px;
     opacity: 0;
     right: 0;
     top: 0;
+    overflow: hidden;
 }
 
 .thumb-overlay a {
