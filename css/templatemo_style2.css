@@ -1047,7 +1047,7 @@ text-align:center;
 .duan-portfolio li {
   position: relative;
   overflow: hidden;
-  max-width: 475px;
+  max-width: 450px;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
   width: 425px;
