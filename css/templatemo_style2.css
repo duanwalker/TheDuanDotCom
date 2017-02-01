@@ -56,11 +56,11 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
        
     }
 
-    .fadeIn {
-        -webkit-animation: animat_show 1.75s;
-        animation: animat_show 2.5s;
-        visibility: visible !important;
-    }
+.fadeIn {
+    -webkit-animation: animat_show 2.5s;
+    animation: animat_show 2.5s;
+    visibility: visible !important;
+}
 
     @-webkit-keyframes animat_show{
         0%{opacity:0}
@@ -95,7 +95,13 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
 	height:100%;
 	background-repeat:repeat;
 } 
-
+#duan-carousel .carousel-caption{
+    position:relative;
+    top:20%;
+    left:0;
+    margin:0 auto;
+    width:60%;
+}
 #duan-carousel .carousel-caption p {
    
     margin:0 auto;
@@ -103,7 +109,7 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
     top: 0;
      font-size: 25px;
      text-align: left;
-      padding-bottom:150px;
+      padding-bottom:100px;
       
 }
 
@@ -119,23 +125,25 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
     top: 0;
     z-index:auto;
 }
-@media (min-width: 200px) {
+/*@media (min-width: 200px) {
     
 
     #duan-carousel > .carousel-caption {
-        /*background: url('../images/bkgnd3.jpg') no-repeat center center fixed;
+        background: url('../images/bkgnd3.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     overflow-x: hidden;
-    overflow-y: hidden;*/    
-        /*padding-bottom: 200px;*/
-        right: 20%;
-        left: 20%;
+    overflow-y: hidden;    
+        padding-bottom: 200px;
+        right: 10%;
+        left: 10%;
         font-size: 20px;
+        overflow: hidden;
+        margin:10px;
     }
-}
+}*/
 
 
 
@@ -193,21 +201,7 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
   line-height: 1.33;
   border-radius: 7px !important;
   margin-bottom :75px;
-  margin-top:25px;
-}
-.btn-lg2 {
-
-  padding: 10px 16px;
-  font-size: 18px;
-  line-height: 1.33;
-  border-radius: 7px !important;
-  margin-bottom :10px;
-  float:right;
-}
-
-.btn-green:hover, .btn-green:focus, .btn-green:active, .btn-green.active, .open .dropdown-toggle.btn-green {
-    background-color: #27ae60;
-    color:#ffffff;
+  margin-top:15px;
 }
 
 .nav > li > a {
@@ -215,8 +209,6 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
     margin-top:40px;
     color: #929292;
 }
-
-
 
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
@@ -350,12 +342,17 @@ text-align:center;
 }
 .member-thumb .container {
     display:flex;
-    position:relative;
-    top:0;
-    left:0;
-    float:left;
+    flex-direction: row;
+    justify-content: flex-center;
+    
 }
-
+.member-thumb div{
+    position: relative;
+    top:-25px;
+    left:0;
+    margin-right: 5px;
+    padding-left:12px;
+}
 .thumb-overlay a {
     
     margin-right: 10px;
