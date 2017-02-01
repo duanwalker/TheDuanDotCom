@@ -3,15 +3,20 @@
 body, html { overflow-x:hidden; width:100%;}
 * {
 	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+	padding: 0;	
+    -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+      box-sizing: border-box;
+    -webkit-border-radius: 0 !important;
+     -moz-border-radius: 0 !important;
+          border-radius: 0 !important;      
 }
 
 body {
     background-color: #ffffff;
     font-family:  'Open Sans', Arial, Helvetice Neue, sans-serif;
     font-size: 12px;
-	
 	font-weight: 300; 
 	font-style: normal; 
 	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
@@ -20,19 +25,13 @@ body {
 
 h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neue, sans-serif; }
 
-* {
-  -webkit-border-radius: 0 !important;
-     -moz-border-radius: 0 !important;
-          border-radius: 0 !important;
-}
-
 .templatemo_clear {
 	clear: both;
 }
 
 .duan-top {
     min-height:110px;
-    z-index: 1;
+    z-index: 10;
     width:100%;
     background-color:#ffffff;
 }
@@ -59,7 +58,7 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
 
     .fadeIn {
         -webkit-animation: animat_show 1.75s;
-        animation: animat_show 1.75s;
+        animation: animat_show 2.5s;
         visibility: visible !important;
     }
 
@@ -102,9 +101,9 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
     margin:0 auto;
     left: 0;
     top: 0;
-     font-size: 20px;
+     font-size: 25px;
      text-align: left;
-      padding-bottom:250px;
+      padding-bottom:150px;
       
 }
 
@@ -186,30 +185,6 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
     margin-top: 12px;
     font-size: 12px;
     color: #e67e22;
-}
-
-
-.btn-orange {
-    background-color: #ff7600;
-    border-bottom:2px solid #d35400;
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    border-radius: 0;
-    color:#ffffff;
-}
-
-.btn-orange:hover, .btn-orange:focus, .btn-orange:active, .btn-orange.active, .open .dropdown-toggle.btn-orange {
-    background-color: #d35400;
-    color:#6d8ec9;
-}
-
-.btn-green {
-    background-color:#2ecc71;
-    border-bottom:2px solid #27ae60;
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    border-radius: 0;
-    color:#ffffff;
 }
 
 .btn-lg {
@@ -357,45 +332,48 @@ text-align:center;
     padding-top :100px;
 
 }
- .member-thumb:hover .thumb-overlay {
-    transition: all 0.3s ease-in-out 0s;
-    visibility: visible;
-    opacity: 0.5;
+.member-thumb {
+    position: relative;
+    overflow: hidden;
 }
-
+.member-thumb:hover .thumb-overlay {
+    transition: all 0.35s ease-in-out 0s;
+    visibility: visible;
+    opacity: 0.8;
+}
 .member-thumb img{
     position: relative;
-    overflow-x: hidden;
     height: 275px;
     width:250px;
     overflow: hidden;
+    /*visibility: visible;*/
 }
 .member-thumb .container {
+    display:flex;
     position:relative;
-    top:-10px;
-    left:50px;
-    overflow:visible;
-    margin-top:-50px;
-}
-
-.member-thumb .thumb-overlay {
-    background-color: rgba(220, 157, 102, 0.8);
-    position: relative;
-    visibility: hidden;
-    height: 275px;
-    max-width:250px;
-    width:100%;
-    opacity: 0;
-    right: 0;
-    top: 0;
+    top:0;
     left:0;
-    overflow: hidden;
+    float:left;
 }
 
 .thumb-overlay a {
-    float:left;
-    margin-right: 0px;
+    
+    margin-right: 10px;
 }
+.member-thumb .thumb-overlay {
+    background-color: #fff;
+    position: absolute;
+    visibility: hidden;
+    padding-top: 60%;
+   /* padding-left: 10%;*/
+    height: 100%;
+    width: 250px;
+    opacity: 0;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+}
+
 .duan-line-header {
     margin-top:10px;
     margin-bottom:10px;
@@ -403,51 +381,16 @@ text-align:center;
     padding-bottom:150px;
     text-align:center;
 }
-
 .portfolio{
     padding-top:120px;
     width:100%;
 }
-
-.member-thumb:hover .thumb-overlay {
-    transition: all 0.35s ease-in-out 0s;
-    visibility: visible;
-    opacity: 0.8;
-}
-
-.member-thumb {
-    position: relative;
-    overflow: hidden;
-}
-
-.member-thumb .thumb-overlay {
-    background-color: #fff;
-    position: absolute;
-    visibility: hidden;
-    padding-top: 60%;
-    padding-left: 10%;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    right: 0;
-    top: 0;
-}
-
-.thumb-overlay a {
-    float:left;
-    margin-right: 5px;
-}
-
-
-
 .team-inner {
-    margin-top:10px;
+    margin-top:5px;
     font-weight:normal;
-    font-size:12px;
+    font-size:10px;
     text-shadow: 2px 2px 2px #000000;
-    
 }
-
 .team-inner-header {
     font-family: 'Open Sans', sans-serif;
     font-weight:600;
@@ -459,19 +402,9 @@ text-align:center;
     font-weight:normal;
     font-size:15px;
     text-shadow: 2px 2px 2px #000000;
-    text-align:left;
+    /*text-align:left;*/
     margin-left:10px;
 }
-
-.about-text {
-    font-family: 'Open Sans', sans-serif;
-    font-weight:600;
-    font-size:16px;
-    float:left;
-    
-}
-
-
 
 .duan-project-box {
     background-size: cover;
@@ -526,10 +459,6 @@ text-align:center;
     margin-top: 10px;
 }
 
-.quote_txt {
-	border-left:2px solid #ffffff; 
-	min-height:160px;
-}
 .duan-footer {
 	/*border-top: 2px solid #cccccc;*/ 
 	margin-top: 50px;
@@ -557,6 +486,7 @@ padding-top: 25px;
 }
 .container{
     margin-top:25px;
+
     padding:10px;
 }
 .container-top{
@@ -741,11 +671,9 @@ ul.duan-project-gallery  li  a img:hover {
     transform: scaleX(0);
 }
 .quote{
-    left: -1000px;
-    position:absolute;
-}
-.tweet_txt{
-    top:40px;
+    display:hidden;
+    border-left:2px solid #ffffff; 
+    min-height:160px;
 }
 
 /* responsive media queries */
@@ -847,32 +775,16 @@ ul.duan-project-gallery  li  a img:hover {
 .header_container{
 text-align:center;
 }
+.bio_row{
+    margin: 20px;
+    padding:50px;
+}
 .bio{
+    
     text-align:left;
     overflow-y :hidden;
 }
-@media (max-width: 540px) {
-    .bio {
-    padding-right: 20px;
-    padding-left: 20px; 
-    text-align:center;
-}
-}
-@media (max-width: 640px) {
-    .bio{
-    padding-right: 20px;
-    padding-left: 20px; 
-    text-align:center;
-    }
-}
 
-
-* {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-      -ms-box-sizing: border-box;
-          box-sizing: border-box;
-}
 .gallery-container{
   position:relative;
   
@@ -897,12 +809,12 @@ text-align:center;
   color: #fff;
   margin: 0;
   position: absolute;
-  top:20px;
+  top:10px;
   text-align: center;
   text-transform: uppercase;
   z-index: 20;
   bottom: 0;
-  left: 20px;
+  left: 30px;
   right: 0;
   width: 80%;
   padding: 0 10%;
@@ -916,30 +828,31 @@ text-align:center;
   margin-bottom: 0.625em;
 }
 .duan-portfolio li img {
-    position: relative;
+    position: absolute;
   width: 100%;
   height: 100%;
   max-width: 320px;
-  display: block;
- /* vertical-align: middle;*/
+  /*display:inline-table;*/
+  vertical-align: middle;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
-  float:left;
+  
 }
 .duan-portfolio li .overlay {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 15px;
   /*max-width: 300px;*/
-  width:320px;
+  width:100%;
   height: 100%;
   background: #000;
-  z-index: 10;
+  z-index: 2;
   opacity: 0.6;
   -webkit-transition: opacity 0.15s ease-out;
   transition: opacity 0.15s ease-out;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
+    overflow: hidden;
 }
 .duan-portfolio li:hover img, li:focus img {
   -webkit-transform: scale(1.2);

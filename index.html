@@ -55,16 +55,12 @@
         $(window).scroll(function () {
             showImages('.star');
         });
-        //$(window).scroll(function () {
-        //    $('.nav').animate({
-        //        left: "800px"
-        //    }, 850);
-           
-        //});
+        //fade in quote of the day
         $(window).scroll(function () {
-            $('.quote').animate({
-                left: "300px"
-            }, 850);
+             showImages('.quote')
+            // $('.quote').animate({
+               
+            // }, 850);
         });
         //bootstrap menu active on click
         $(".nav a").on("click", function () {
@@ -254,8 +250,8 @@
                     <div class="col-sm-4 text-center">ABOUT ME</div>
                     <div class="col-sm-4 hr_gray"></div>
                 </div>
-                <div class="row row_team">
-                    <div class="text-center">
+                <div class="row ">
+                    <div class="bio_row">
                         <section class="col-md-3  ">
 
                             <div class="member-thumb">
@@ -330,7 +326,7 @@
                     <div class="row">
                         <ul>
                             <li class="col-md-4">
-                                <a href="#">
+                                <a href="https://vast-citadel-73972.herokuapp.com/">
                                     <div class="text">
                                         <h2>My Girls Catering</h2>
                                         <p>I built this site in 2017 for a catering startup using HTML5, CSS3 Javascript and Bootstrap.</p>
@@ -340,7 +336,7 @@
                                 </a>
                             </li>
                             <li class="col-md-4">
-                                <a href="#">
+                                <a href="http://www.givengo.org/">
                                     <div class="text">
                                         <h2>Give N Go</h2>
                                         <p>I built this site in Wordpress for an educational non-profit in 2014.</p>
@@ -350,7 +346,7 @@
                                 </a>
                             </li>
                             <li class="col-md-4">
-                                <a href="#">
+                                <a href="http://mycpututor.com/">
                                     <div class="text">
                                         <h2>The Computer Tutor</h2>
                                         <p>I built this site in 2013 using C# and ASP.Net. The Computer Tutor is a free site offering video tutorials on simple computing tasks.</p>
@@ -374,7 +370,7 @@
                                 </a>
                             </li>
                             <li class="col-md-4">
-                                <a href="#">
+                                <a href="http://readium.github.io/test-results/cloudreader/index.html">
                                     <div class="text">
                                         <h2>Readium Test Results</h2>
                                         <p>I built this simple application using just HTML and an open source JS library to automate a business process that was previously done manually on my current role. The JS parses data from an Excel spreadsheet and populates an HTML table.</p>
@@ -428,7 +424,7 @@
                     <div class="col-md-1">
                         <img src="images/quote.png" alt="icon" />
                     </div>
-                    <div class="col-md-7 quote_txt star ">
+                    <div class="col-md-7 quote star ">
                         <script type="text/javascript" src="http://www.brainyquote.com/link/quotebr.js"></script>
                         <small><i><a href="http://www.brainyquote.com/quotes_of_the_day.html" target="_blank"></a></i></small>                        
                     </div>
