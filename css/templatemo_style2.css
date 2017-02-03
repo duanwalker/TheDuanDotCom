@@ -310,7 +310,7 @@ text-align:center;
 .hr_gray {
     border: 1px solid #cccccc; 
 }
-
+/*about me bio img and social media*/
 .duan-team {
     background: url('../images/hero-1-2.jpg') no-repeat center center fixed ; 
    -webkit-background-size: cover;
@@ -338,14 +338,10 @@ text-align:center;
     height: 275px;
     width:250px;
     overflow: hidden;
-    /*visibility: visible;*/
+    
 }
 .member-thumb .row {
-   /* display:flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items:center;*/
-
+   
 }
 .member-thumb div{
     position: relative;
@@ -358,9 +354,17 @@ text-align:center;
    /* margin-right: 5px;
     padding-left:12px;*/
 }
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) {
+    .member-thumb div {
+        display:flex;
+    flex-direction: row;
+    }
+}
 .thumb-overlay a {
     
-    /*margin-right: 10px;*/
 }
 .member-thumb .thumb-overlay {
     background-color: #fff;
