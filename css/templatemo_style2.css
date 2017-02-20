@@ -25,6 +25,55 @@ body {
 
 h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neue, sans-serif; }
 
+/*------- Nav Bar and Header Sect --------*/
+.btn-lg {
+  padding: 15px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 7px !important;
+  margin-bottom :75px;
+  margin-top:15px;
+}
+
+.nav > li > a {
+    padding: 10px 10px;
+    margin-top:40px;
+    color: #929292;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    background-color: rgba(170, 196, 238, 0.68);
+    color:#fff;
+    
+ 
+}
+
+.navbar-default {
+    background-color:#fff;
+    border:none;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    background-color: #6d8ec9;
+    color:#fff;
+    text-shadow:3px 3px 1px #333;
+}
+
+.nav {
+/*left: -500px;*/   /*start off behind the scenes @ -500px and use the javascript to animate +500px*/
+/*position:inherit;*/
+text-align:center;
+ padding-left:50px;
+}
+
+.navbar {
+   
+    /*margin: 0 auto;*/
+}
+
 .templatemo_clear {
 	clear: both;
 }
@@ -67,7 +116,7 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
         100%{opacity:1}
     }
 
-/* ------ Carousel ----- */
+/* ------ Carousel Sect----- */
 
 #duan-carousel {
    /*  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('../images/bkgnd3.jpg');
@@ -149,7 +198,7 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
 
 /* ------ End of Carousel ----- */
 
-/* ------ Welcome & Slogan ------ */
+/* ------ Welcome & Slogan Sect------ */
 .duan-welcome {
     border-bottom: 1px solid #cccccc;
     min-height: 500px;
@@ -172,104 +221,12 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
     position:absolute;*/ /* animate skills section using javascript*/
 }
 
-.duan-service-item {
-    font-family:  'Open Sans', sans-serif;
-    margin-bottom: 10px;
-    font-size: 20px;
-}
-
-
-.duan-service-item p {
-    font-weight: lighter; 
-    text-align: justify; 
-    margin-top: 25px;
-    font-size: 14px;
-    color: #929292;
-}
-
-.subheader {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: normal;
-    margin-top: 12px;
-    font-size: 12px;
-    color: #e67e22;
-}
-
-.btn-lg {
-  padding: 15px 16px;
-  font-size: 18px;
-  line-height: 1.33;
-  border-radius: 7px !important;
-  margin-bottom :75px;
-  margin-top:15px;
-}
-
-.nav > li > a {
-    padding: 10px 10px;
-    margin-top:40px;
-    color: #929292;
-}
-
-.navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:focus {
-    background-color: rgba(170, 196, 238, 0.68);
-    color:#fff;
-    
- 
-}
-
-.navbar-default {
-    background-color:#fff;
-    border:none;
-}
-
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus {
-    background-color: #6d8ec9;
-    color:#fff;
-    text-shadow:3px 3px 1px #333;
-}
-
-.nav {
-/*left: -500px;*/   /*start off behind the scenes @ -500px and use the javascript to animate +500px*/
-/*position:inherit;*/
+.header_container{
 text-align:center;
- padding-left:50px;
-}
-
-.navbar {
-   
-    /*margin: 0 auto;*/
 }
 
 .icon-close {
     background: url("http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/uber/close.png") no-repeat center center fixed; 
-}
-
-.duan-service-item-header {
-    margin-left: -10px; 
-    font-size:12px;
-    padding: 16px 20px 20px; 
-    font-weight: bold;
-    display: inline-block;
-    -webkit-transition: font-size 2s; /* For Safari 3.1 to 6.0 */
-    transition: font-size 2s;
-}
-/*.duan-service-item-header:hover {
-   font-size:24px; 
-}*/
-.duan-service-item-header p{
-    position:relative;
-   width:100%;
-   text-align:left;
-}
-.duan-header-orange {
-    background-color:#ff7600;
-    min-width: 298px;
-    height: 67px;
-    color: #fff; 
-
 }
 
 .team_hr {
@@ -310,7 +267,7 @@ text-align:center;
 .hr_gray {
     border: 1px solid #cccccc; 
 }
-/*about me bio img and social media*/
+/* about me/bio sect */
 .duan-team {
     background: url('../images/hero-1-2.jpg') no-repeat center center fixed ; 
    -webkit-background-size: cover;
@@ -340,9 +297,18 @@ text-align:center;
     overflow: hidden;
     
 }
+.bio_row{
+   /* margin: 20px;*/
+    padding:50px;
+}
+.bio{   
+    text-align:left;
+    overflow-y :hidden;
+}
 .member-thumb .row {
    
 }
+
 .member-thumb div{
     position: relative;
     top:-25px;
@@ -410,37 +376,6 @@ text-align:center;
     text-shadow: 2px 2px 2px #000000;
     /*text-align:left;*/
     margin-left:10px;
-}
-
-.duan-project-box {
-    background-size: cover;
-    position: relative;
-    overflow: hidden;
-    cursor:pointer;
-    height: 100%;
-    width: 100%;
-}
-
-.duan-project-box:hover .project-overlay {
-    transition: all 0.3s ease-in-out 0s;
-    visibility: visible;
-    opacity: 1;
-}
-
-.project-overlay {
-    background : rgba(0,0,0,.75);
-    /*border : 2px solid #ff7600;*/
-    visibility: hidden;
-    position: absolute;
-    text-align:center;
-    padding-top:40px;
-    color: #ffffff;
-    margin:0 auto;
-    width: 100%;
-    height:100%;
-    opacity: 0;
-    right: 0;
-    top: 0;
 }
 
 .duan-project-gallery li {
@@ -778,18 +713,7 @@ ul.duan-project-gallery  li  a img:hover {
     }
 }
 
-.header_container{
-text-align:center;
-}
-.bio_row{
-    margin: 20px;
-    padding:50px;
-}
-.bio{
-    
-    text-align:left;
-    overflow-y :hidden;
-}
+
 
 .gallery-container{
   position:relative;
