@@ -33,7 +33,7 @@ jQuery(function($) {
 
         // add inbody class
   var hash = $(this).find('li.active a').attr('href');
-  if(hash !== '#featured') {
+  if(hash !== '#duan-welcome-home') {
     $('header navbar').addClass('inbody');
   } else {
     $('header navbar').removeClass('inbody');
@@ -43,12 +43,14 @@ jQuery(function($) {
   // Add an inbody class to nav when scrollspy event fires
   $('.navbar-fixed-top').on('activate.bs.scrollspy', function() {
     var hash = $(this).find('li.active a').attr('href');
-    if(hash !== '#featured') {
+    if(hash !== '#duan-welcome-home') {
       $('header nav').addClass('inbody');
     } else {
       $('header nav').removeClass('inbody');
     }
   });
+     
+
         // to stick navbar on top
         $('.duan-top ').stickUp();
 

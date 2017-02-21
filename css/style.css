@@ -32,30 +32,34 @@ header .navbar.inbody {
     padding-bottom: 0;
 }
 header .inbody {
+    position: fixed;
     background:white;
-    height:100px;
+    height:80px;
+    z-index: 50;
 }
 header .navbar-default {
-    background-color: transparent;
+    /*background-color: transparent;*/
     border: none;
 }
 header .navbar {
     padding: 30px 0;
     transition: all .5s ease-out;
+    margin: 0 auto;
+}
+header .inbody .navbar-brand > img {
+    width:70px;
+    height:70px;
 }
 .nav {
 text-align:center;
- padding-left:50px;
+ /*padding-left:50px;*/
 }
 
-.navbar {
-    margin: 0 auto;
-}
 .duan-top {
     min-height:100px;
     z-index: 10;
     width:100%;
-    background:transparent;
+    /*background:transparent;*/
     transition: all .5s ease-out;
 }
 
@@ -84,13 +88,12 @@ text-align:center;
     background-color: rgba(170, 196, 238, 0.68);
     color:#fff;
     border-radius: 3px !important;
+    -webkit-border-radius: 3px !important;
+     -moz-border-radius: 3px !important;
  
 }
 
-.navbar-default {
-    background:transparent;
-    border:none;
-}
+
 
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
@@ -99,6 +102,9 @@ text-align:center;
     color:#fff;
     text-shadow:3px 3px 1px #333;
     border-radius: 3px !important;
+    -webkit-border-radius: 3px !important;
+     -moz-border-radius: 3px !important;
+ 
 }
 
 
@@ -502,8 +508,10 @@ padding-top: 25px;
     padding:10px;
 }
 .container-top{
+  
     margin-top:5px;
     padding-bottom:400px;
+    z-index:1;
 }
 .image{
     width :100px;
