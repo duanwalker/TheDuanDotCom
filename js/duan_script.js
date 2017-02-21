@@ -52,7 +52,7 @@ jQuery(function($) {
      
 
         // to stick navbar on top
-        $('.duan-top ').stickUp();
+      //  $('.duan-top ').stickUp();
 
         // gallery category
         $('.duan-gallery-category a').click(function(e){
