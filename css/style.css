@@ -80,7 +80,10 @@ text-align:center;
 .nav > li > a {
     padding: 10px 10px;
     margin-top:40px;
-    color: #929292;
+    color: #c2c3c4 !important ;
+    text-shadow: 1px 1px 0px #484949 !important;
+    font-weight:bold;
+    font-size: 14px;
 }
 
 .navbar-default .navbar-nav > li > a:hover,
@@ -185,7 +188,7 @@ text-align:center;
 #duan-carousel .item {
     height: 400px;
 }
-#duan-carousel .carousel-inner > .item > img {
+#duan-carousel .carousel-inner .carousel-item img {
    
     position: absolute;
     /*min-width: 100%;
@@ -193,6 +196,10 @@ text-align:center;
     left: 0;
     top: 0;
     z-index:auto;
+    -webkit-border-radius: 50% !important;
+     -moz-border-radius: 50% !important;
+          border-radius: 50% !important;
+    margin-left:20px;
 }
 /*@media (min-width: 200px) {
     
