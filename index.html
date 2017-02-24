@@ -71,10 +71,14 @@
             // }, 850);
         });
         //bootstrap menu active on click
-        $(".nav a").on("click", function () {
-            $(".nav").find(".active").removeClass("active");
-            $(this).parent().addClass("active");
-        });
+        // $(".nav a").on("click", function () {
+        //     $(".nav").find(".active").removeClass("active");
+        //     $(this).parent().addClass("active");
+        // });
+            $(".nav li").on("click", function() {
+                    $(".nav li").removeClass("active");
+                    $(this).addClass("active");
+            });
     </script>
 
 </head>
@@ -82,7 +86,7 @@
     <main>
         <header>
         <!-- Dynamic navbar -->
-        <nav class="navbar navbar-default navbar-fixed-top duan-top" role="navigation">
+        <nav class="navbar navbar-default navbar-fixed-top duan-top" data-spy="affix" data-offset-top="197" role="navigation">
                 <section class="container-fluid">
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#duan-nav-bar">
@@ -408,7 +412,7 @@
                                 <a href="#" data-group="gallery-graphic">
                                     <div class="text">
                                         <h2>Happy Cow</h2>
-                                        <p>I created this character for a childrens app i built for my son.</p>
+                                        <p>I created this character in photoshop for a childrens app i built for my son.</p>
                                     </div>
                                     <div class="overlay"></div>
                                     <img src="https://drive.google.com/uc?export=view&id=0B66xaYRsJwbGaUJieW1VWmkxQjg" alt="cow"/>
@@ -418,7 +422,7 @@
                                 <a href="#" data-group="gallery-graphic">
                                     <div class="text">
                                         <h2>Miles To Go Catering</h2>
-                                        <p>I created this logo for a catering company in Charlotte.</p>
+                                        <p>I created this logo in photoshop for a local catering company in Charlotte.</p>
                                     </div>
                                     <div class="overlay"></div>
                                     <img src="images/MilesToGoCatering3.png" alt="miles2go" />
@@ -428,7 +432,7 @@
                                 <a href="#" data-group="gallery-graphic">
                                     <div class="text">
                                         <h2>Readium</h2>
-                                        <p>I created this logo for the Readium foundation for their open source e-reader.</p>
+                                        <p>I created this logo in photoshop for the Readium foundation for their open source e-reader.</p>
                                     </div>
                                     <div class="overlay"></div>
                                     <img src="images/Readium_test_4.png" alt="thecomputertutor" />
@@ -439,7 +443,7 @@
                                 <a href="#" data-group="gallery-graphic">
                                     <div class="text">
                                         <h2>Pure Alpha Trade</h2>
-                                        <p>I created this logo for a local startup.</p>
+                                        <p>I created this logo in photoshop for a local startup.</p>
                                     </div>
                                     <div class="overlay"></div>
                                     <img src="images/PAT1_small.JPG" alt="PAT"/>
@@ -449,7 +453,7 @@
                                 <a href="#" data-group="gallery-graphic">
                                     <div class="text">
                                         <h2>Elite</h2>
-                                        <p>I created this logo for a local musician.</p>
+                                        <p>I created this logo in photoshop for a local musician.</p>
                                     </div>
                                     <div class="overlay"></div>
                                     <img src="images/elitelogo3.JPG" alt="Readium" />
@@ -459,7 +463,7 @@
                                 <a href="#" data-group="gallery-graphic">
                                     <div class="text">
                                         <h2>My Girls Catering</h2>
-                                        <p>I created this logo for a catering startup in Greensboro.</p>
+                                        <p>I created this logo in photoshop for a catering startup in Greensboro.</p>
                                     </div>
                                     <div class="overlay"></div>
                                     <img src="images/MyGirlsCatering.png" alt="Readium" />

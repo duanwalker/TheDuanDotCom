@@ -1,5 +1,6 @@
-var top_menu_height = 0;
+
 jQuery(function($) {
+
         $(window).load( function() {
             $('.external-link').unbind('click');    
         });
@@ -9,7 +10,7 @@ jQuery(function($) {
         
         top_menu_height = $('.duan-top').height();
         // scroll spy to auto active the nav item
-        $('body').scrollspy({ target: '#duan-nav-bar', offset: top_menu_height + 10 });
+        $('body').scrollspy({ target: '.navbar', offset: 50 });
         $('.external-link').unbind('click');
 
         // scroll to top
@@ -82,6 +83,7 @@ jQuery(function($) {
 // scroll animation 
 function scrollTo(selectors)
 {
+        var top_menu_height = 0;
 
     if(!$(selectors).size()) return;
     var selector_top = $(selectors).offset().top - top_menu_height;
