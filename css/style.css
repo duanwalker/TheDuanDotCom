@@ -21,6 +21,7 @@ body {
 	font-style: normal; 
 	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
 	-webkit-text-size-adjust: 100%;
+    z-index: 1;
 }
 
 h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neue, sans-serif; }
@@ -191,7 +192,7 @@ text-align:center;
 }
 .duan-tweets {
     background-color: #8996a0;
-    height:400px !important;
+    height:350px !important;
     width: 100%;
     font-family:  'Open Sans', sans-serif;
     color:#ffffff;
@@ -267,11 +268,14 @@ text-align:center;
   color: white;
   font-style: italic;
 }
+.parallax{
+    position:fixed;
+    z-index:0;
+}
 .duan-service {
     margin-bottom: 10px;
     margin-top: 10px;
-    /*left: -1000px;
-    position:absolute;*/ /* animate skills section using javascript*/
+    z-index: 1;
 }
 
 .duan-service-item {
@@ -726,7 +730,7 @@ ul.duan-project-gallery  li  a img:hover {
 .quote{
     display:hidden;
     border-left:2px solid #ffffff; 
-    min-height:160px;
+    min-height:50px;
 }
 
 /* responsive media queries */
