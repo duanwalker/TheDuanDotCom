@@ -213,13 +213,22 @@ text-align:center;
 .carousel-caption {
     position:relative;
     bottom:0 !important;
-    padding:5px;
-    font-size: 8px;
+    margin-left:15px;
+    margin-right: 15px;
+  
+}
+.carousel-caption h1{
+   
+    font-size: 20px;
+}
+.carousel-caption p {
+   
+    font-size: 6px;
 }
 .carousel-item img {
     position: relative;
-    min-width: 75px;
-    height: 75px;
+    width: 85px;
+    height: 85px;
     left: 70px;
     top: 10px;
     z-index:auto;
@@ -235,11 +244,25 @@ text-align:center;
         position: relative;      
         right: 10%;
         left: 10%;
-        font-size: 10px;
-        overflow: hidden;
         margin:3px;
         padding: 5px;
         align-items: center;
+    }
+    .carousel-caption h1 {
+        position: relative;      
+        right: 10%;
+        left: 10%;
+       
+        margin:3px;
+        padding: 5px;
+    }
+    .carousel-caption p{
+        position: relative;      
+        right: 10%;
+        left: 10%;
+       
+        margin:3px;
+        padding: 5px;
     }
     .carousel-item img{
         position: relative;
@@ -251,7 +274,7 @@ text-align:center;
         position: relative;
         height:100%;
         width: 100%;
-        overflow: hidden;
+  
         align-items: center;
     }
 }
@@ -262,23 +285,40 @@ text-align:center;
         position: relative;      
         right: 10%;
         left: 10%;
-        font-size: 8px;
         overflow: hidden;
         margin:3px;
         padding: 5px;
         align-items: center;
+    }
+    .carousel-caption h1 {
+        position: relative;      
+        right: 10%;
+        left: 10%;
+      
+      
+        margin:3px;
+        padding: 5px;
+    }
+    .carousel-caption p{
+        position: relative;      
+        right: 10%;
+        left: 10%;
+      
+        margin:3px;
+        padding: 5px;
     }
     .carousel-item img{
         position: relative;
         top:0;
         left:0;
         padding:5px;
+
      }
     .duan-tweets{
         position: relative;
         height:100%;
         width: 100%;
-        overflow: hidden;
+   
         align-items: center;
     }
 }
